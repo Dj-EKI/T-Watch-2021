@@ -56,7 +56,7 @@ float TWatchClass::power_get_percent() {
   float decade = i * 10.0;
   _pow_percent = constrain(decade + ((_pow_cur_vol - Qcm[i]) / vol_section), 0.0, 100.0);
 
-  return _pow_cur_vol;
+  return _pow_percent;
 }
 float TWatchClass::power_get_volt() {
   return constrain(_pow_cur_vol, 0, 4200);
