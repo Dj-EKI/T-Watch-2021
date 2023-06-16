@@ -85,7 +85,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   delay(5000);
   rtc->setDateTime(2021, 12, 21, 18, 04, 50);
-  rtc->setAlarm(99, 05, 99, 99); // wake up after 5 seconds
+  rtc->setAlarm(99, 05, 99, 99); // wake up after 5 minutes
   rtc->setAlarmByMinutes(5);
   twatch->hal_sleep(true);
 }
